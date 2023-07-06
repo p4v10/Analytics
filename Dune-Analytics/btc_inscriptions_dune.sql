@@ -26,7 +26,7 @@ dataviz_ready AS (
         bm.weekly_fees,
         bm.total_fees
     FROM base_metrics AS bm
-    WHERE bm.week_date >= DATE('2023-01-02') -- filter our 2022 dates
+    WHERE bm.week_date >= DATE('2023-01-02') -- filter out 2022 dates
     ORDER BY bm.week_date DESC
 )
 -- reporting metrics
