@@ -1,5 +1,6 @@
 -- The goal of this analysis is to understand the weekly performance of inscriptions and fees in the Bitcoin transactions dataset.
 -- By calculating weekly metrics such as total inscriptions, total fees, average weekly inscriptions, average weekly percentage change in inscriptions, and average weekly fees, we aim to gain insights into the trends and fluctuations in these metrics over time.
+-- This data will be used to create an interactive visual in this repo - https://github.com/p4v10/Data-Visualizations/blob/main/btc_inscriptions_chart/chart.js
 
 -- Last edited: 07.05.2023
 WITH base_metrics AS (
