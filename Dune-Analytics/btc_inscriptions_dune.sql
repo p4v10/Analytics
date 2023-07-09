@@ -2,6 +2,8 @@
 The goal of this analysis is to understand the weekly performance of inscriptions and fees in the Bitcoin transactions dataset.
 By calculating weekly metrics such as total inscriptions, total fees, average weekly inscriptions, average weekly percentage change in inscriptions, and average weekly fees, we aim to gain insights into the trends and fluctuations in these metrics over time.
 
+Dune Query - https://dune.com/queries/2694298
+
 Last edited: 07.05.2023
 
 */
