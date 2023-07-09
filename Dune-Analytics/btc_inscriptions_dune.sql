@@ -1,8 +1,11 @@
--- The goal of this analysis is to understand the weekly performance of inscriptions and fees in the Bitcoin transactions dataset.
--- By calculating weekly metrics such as total inscriptions, total fees, average weekly inscriptions, average weekly percentage change in inscriptions, and average weekly fees, we aim to gain insights into the trends and fluctuations in these metrics over time.
--- This data will be used to create an interactive visual in this repo - https://github.com/p4v10/Data-Visualizations/blob/main/btc_inscriptions_chart/chart.js
+/*
+The goal of this analysis is to understand the weekly performance of inscriptions and fees in the Bitcoin transactions dataset.
+By calculating weekly metrics such as total inscriptions, total fees, average weekly inscriptions, average weekly percentage change in inscriptions, and average weekly fees, we aim to gain insights into the trends and fluctuations in these metrics over time.
 
--- Last edited: 07.05.2023
+Last edited: 07.05.2023
+
+*/
+
 WITH base_metrics AS (
     SELECT
         DATE_TRUNC('week', block_time) AS week_date,
@@ -26,7 +29,7 @@ dataviz_ready AS (
         bm.weekly_fees,
         bm.total_fees
     FROM base_metrics AS bm
-    WHERE bm.week_date >= DATE('2023-01-02') -- filter out 2022 dates
+    WHERE bm.week_date >= DATE('2023-01-02') -- filter our 2022 dates
     ORDER BY bm.week_date DESC
 )
 -- reporting metrics
