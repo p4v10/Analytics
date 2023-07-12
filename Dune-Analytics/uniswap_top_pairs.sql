@@ -3,7 +3,7 @@ In this query, we will look at the top 5 pairs by volume on Uniswap starting fro
 
 Dune Query - https://dune.com/queries/2701741
 
-Last edited: 07.08.2023
+Last edited: 07.12.2023
 
 */
 
@@ -29,7 +29,7 @@ SELECT
 FROM dex.trades AS dx
 INNER JOIN most_traded_pairs AS tp -- join our top 5 pairs
     ON dx.token_pair = tp.token_pair
-WHERE SPLIT_PART(CAST(dx.block_date AS varchar), ' ', 1) >= '2023-01-01'
+WHERE SPLIT_PART(CAST(dx.block_date AS varchar), ' ', 1) >= '2023-01-01' -- still looking at 2023 data only
 GROUP BY 1, 2
 ORDER BY 1 ASC, 2 DESC
 ;
