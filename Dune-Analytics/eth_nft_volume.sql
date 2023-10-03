@@ -1,3 +1,12 @@
+/*
+In this query, we will look at volume for the top NFT's on ETH network.
+
+Dune Query - https://dune.com/queries/2794123
+
+Last edited: 10.02.2023
+
+*/
+
 WITH total_volume_yearly AS ( -- we would need this to calculate % share of total market volume
     SELECT
         -- get yearly volume for across all collections
