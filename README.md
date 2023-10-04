@@ -1,4 +1,4 @@
-# Blockchain-Analytics
+# Analytics
 
 ## Description
 Welcome to a rich resource of SQL scripts tailored for deep-diving into blockchain data analytics. Ranging from basic data extraction queries to advanced analytics scripts, this repository is your go-to place for extracting valuable insights from blockchain data.
