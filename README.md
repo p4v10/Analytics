@@ -17,8 +17,8 @@ Welcome to a rich resource of SQL scripts tailored for deep-diving into blockcha
 Clone this repository to have local access to an extensive collection of SQL scripts. Ensure you have a SQL-compatible database containing blockchain data to run these scripts.
 
 ```sh
-git clone https://github.com/your-username/blockchain-sql-analytics.git
-cd blockchain-sql-analytics
+git clone https://github.com/p4v10/Analytics.git
+cd Analytics
 ```
 
 ## Usage
